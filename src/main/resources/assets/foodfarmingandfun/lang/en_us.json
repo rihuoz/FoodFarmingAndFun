@@ -2,8 +2,10 @@
   "itemGroup.FFAFTab": "Food Farming & Fun",
   "item.foodfarmingandfun.gem_cluster": "Gem Cluster",
   "item.foodfarmingandfun.raw_gem": "Raw Gem",
+  "item.foodfarmingandfun.end_game_food_item": "End Game Food Item",
 
   "block.foodfarmingandfun.raw_gem_block": "Block of Raw Gems",
   "block.foodfarmingandfun.raw_gem_ore": "Raw Gem Ore",
-  "block.foodfarmingandfun.deep_slate_gem_ore": "Deep Slate Gem Ore"
+  "block.foodfarmingandfun.deep_slate_gem_ore": "Deep Slate Gem Ore",
+  "block.foodfarmingandfun.regeneration_block": "Regeneration Block"
 }

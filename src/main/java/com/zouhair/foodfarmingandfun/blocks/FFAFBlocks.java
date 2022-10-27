@@ -1,6 +1,7 @@
 package com.zouhair.foodfarmingandfun.blocks;
 
 import com.zouhair.foodfarmingandfun.FoodFarmingAndFun;
+import com.zouhair.foodfarmingandfun.blocks.custom.RegenrataionBlock;
 import com.zouhair.foodfarmingandfun.items.FFAFCreativeTab;
 import com.zouhair.foodfarmingandfun.items.FFAFItems;
 import net.minecraft.world.item.BlockItem;
@@ -43,6 +44,13 @@ public class FFAFBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .requiresCorrectToolForDrops()
                             .strength(4.4f)
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> REGENERATION_BLOCK = registerBlock("regeneration_block",
+            () -> new RegenrataionBlock(
+                    BlockBehaviour.Properties.of(Material.MOSS)
+                            .requiresCorrectToolForDrops()
+                            .strength(8.0f)
                     ), FFAFCreativeTab.FFAF_TAB);
 
 

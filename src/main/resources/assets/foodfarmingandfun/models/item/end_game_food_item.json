@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodfarmingandfun:item/end_game_food_item"
+  }
+}
