@@ -1,0 +1,9 @@
+{
+  "itemGroup.FFAFTab": "Food Farming & Fun",
+  "item.foodfarmingandfun.gem_cluster": "Gem Cluster",
+  "item.foodfarmingandfun.raw_gem": "Raw Gem",
+
+  "block.foodfarmingandfun.raw_gem_block": "Block of Raw Gems",
+  "block.foodfarmingandfun.raw_gem_ore": "Raw Gem Ore",
+  "block.foodfarmingandfun.deep_slate_gem_ore": "Deep Slate Gem Ore"
+}

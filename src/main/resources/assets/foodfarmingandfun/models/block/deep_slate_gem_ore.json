@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "foodfarmingandfun:block/deep_slate_gem_ore"
+  }
+}

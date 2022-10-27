@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "foodfarmingandfun:gem_cluster"
+  },
+  "result": "foodfarmingandfun:raw_gem",
+  "count": 1
+}

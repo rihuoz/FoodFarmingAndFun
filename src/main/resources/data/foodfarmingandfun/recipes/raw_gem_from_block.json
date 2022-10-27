@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "foodfarmingandfun:raw_gem_block"
+    }
+  ],
+  "result": {
+    "item": "foodfarmingandfun:raw_gem",
+    "count": 9
+  }
+}
