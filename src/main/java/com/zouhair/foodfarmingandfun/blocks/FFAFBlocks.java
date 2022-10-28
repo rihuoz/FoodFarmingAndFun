@@ -1,7 +1,8 @@
 package com.zouhair.foodfarmingandfun.blocks;
 
 import com.zouhair.foodfarmingandfun.FoodFarmingAndFun;
-import com.zouhair.foodfarmingandfun.blocks.custom.RegenrataionBlock;
+import com.zouhair.foodfarmingandfun.blocks.custom.GlassLamps;
+import com.zouhair.foodfarmingandfun.blocks.custom.RegenerationBlock;
 import com.zouhair.foodfarmingandfun.items.FFAFCreativeTab;
 import com.zouhair.foodfarmingandfun.items.FFAFItems;
 import net.minecraft.world.item.BlockItem;
@@ -47,10 +48,138 @@ public class FFAFBlocks {
                     ), FFAFCreativeTab.FFAF_TAB);
 
     public static final RegistryObject<Block> REGENERATION_BLOCK = registerBlock("regeneration_block",
-            () -> new RegenrataionBlock(
-                    BlockBehaviour.Properties.of(Material.MOSS)
+            () -> new RegenerationBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
                             .requiresCorrectToolForDrops()
-                            .strength(8.0f)
+                            .strength(12.0f)
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> GLASS_LAMP = registerBlock("glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> BLACK_STAINED_GLASS_LAMP = registerBlock("black_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> BLUE_STAINED_GLASS_LAMP = registerBlock("blue_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> CYAN_STAINED_GLASS_LAMP = registerBlock("cyan_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> GRAY_STAINED_GLASS_LAMP = registerBlock("gray_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> GREEN_STAINED_GLASS_LAMP = registerBlock("green_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_GLASS_LAMP = registerBlock("light_blue_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_GLASS_LAMP = registerBlock("light_gray_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> LIME_STAINED_GLASS_LAMP = registerBlock("lime_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_GLASS_LAMP = registerBlock("magenta_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_LAMP = registerBlock("orange_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> PINK_STAINED_GLASS_LAMP = registerBlock("pink_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> PURPLE_GLASS_LAMP = registerBlock("purple_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> RED_GLASS_LAMP = registerBlock("red_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> WHITE_GLASS_LAMP = registerBlock("white_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
+                    ), FFAFCreativeTab.FFAF_TAB);
+
+    public static final RegistryObject<Block> YELLOW_GLASS_LAMP = registerBlock("yellow_stained_glass_lamp",
+            () -> new GlassLamps(
+                    BlockBehaviour.Properties.of(Material.GLASS)
+                            .requiresCorrectToolForDrops()
+                            .lightLevel(state -> state.getValue(GlassLamps.LIT) ? 15 : 2)
+                            .instabreak()
                     ), FFAFCreativeTab.FFAF_TAB);
 
 

@@ -5,6 +5,7 @@ import com.zouhair.foodfarmingandfun.FoodFarmingAndFun;
 import com.zouhair.foodfarmingandfun.items.custom.EndGameFoodItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,6 +33,7 @@ public class FFAFItems {
                             .saturationMod(0.8f)
                             .build())
                     .stacksTo(1)
+                    .rarity(Rarity.EPIC)
                     .tab(FFAFCreativeTab.FFAF_TAB)
                     ));
 

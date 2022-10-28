@@ -3,14 +3,21 @@ package com.zouhair.foodfarmingandfun.items.custom;
 
 
 import com.mojang.datafixers.util.Pair;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 
 public class EndGameFoodItem extends Item {
@@ -27,6 +34,20 @@ public class EndGameFoodItem extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
         return eat(level, itemStack, entity);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components
+            , TooltipFlag tooltipFlag) {
+        if(Screen.hasShiftDown()){
+            components.add(Component.literal("This is Top tier Food")
+                    .withStyle(ChatFormatting.DARK_PURPLE));
+        }else {
+            components.add(Component.literal("Press SHIFT for More information")
+                    .withStyle(ChatFormatting.DARK_AQUA));
+        }
+
+        super.appendHoverText(itemStack, level, components, tooltipFlag);
     }
 
     public ItemStack eat(Level level, ItemStack itemStack, LivingEntity entity) {

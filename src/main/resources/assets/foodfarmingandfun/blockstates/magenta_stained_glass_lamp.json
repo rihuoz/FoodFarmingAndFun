@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "foodfarmingandfun:block/glass_lamps/magenta_stained_glass_lamp_on" },
+    "lit=false": { "model": "foodfarmingandfun:block/glass_lamps/magenta_stained_glass_lamp"}
+  }
+}
