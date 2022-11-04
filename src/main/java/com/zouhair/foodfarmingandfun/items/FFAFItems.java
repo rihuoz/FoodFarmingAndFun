@@ -2,9 +2,12 @@ package com.zouhair.foodfarmingandfun.items;
 
 
 import com.zouhair.foodfarmingandfun.FoodFarmingAndFun;
+import com.zouhair.foodfarmingandfun.blocks.FFAFBlocks;
 import com.zouhair.foodfarmingandfun.items.custom.EndGameFoodItem;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +28,7 @@ public class FFAFItems {
             () -> new Item(new Item.Properties()
                     .tab(FFAFCreativeTab.FFAF_TAB)
             ));
+
 
     public static final RegistryObject<Item> END_GAME_FOOD_ITEM = ITEMS.register("end_game_food_item",
             () -> new EndGameFoodItem(new Item.Properties()

@@ -4,6 +4,7 @@ package com.zouhair.foodfarmingandfun;
 import com.mojang.logging.LogUtils;
 import com.zouhair.foodfarmingandfun.blocks.FFAFBlocks;
 import com.zouhair.foodfarmingandfun.items.FFAFItems;
+import com.zouhair.foodfarmingandfun.villagers.FFAFVillagers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +13,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import static com.zouhair.foodfarmingandfun.blocks.custom.SetRenderLayerForCustomBlocks.setRenderLayerForCropBlocks;
+import static com.zouhair.foodfarmingandfun.blocks.custom.SetRenderLayerForCustomBlocks.setRenderLayerForTranslucentBlocks;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(com.zouhair.foodfarmingandfun.FoodFarmingAndFun.MOD_ID)
@@ -34,6 +38,9 @@ public class FoodFarmingAndFun
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(() -> {
+            FFAFVillagers.registerPOIs();
+        });
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -42,7 +49,8 @@ public class FoodFarmingAndFun
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            setRenderLayerForTranslucentBlocks();
+            setRenderLayerForCropBlocks();
         }
     }
 }

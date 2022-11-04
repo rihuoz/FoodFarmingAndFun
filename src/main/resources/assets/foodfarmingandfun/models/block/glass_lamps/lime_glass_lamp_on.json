@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "foodfarmingandfun:block/glass_lamps/lime_glass_lamp_on"
-  }
-}

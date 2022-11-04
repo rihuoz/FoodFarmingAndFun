@@ -3,6 +3,8 @@
   "item.foodfarmingandfun.gem_cluster": "Gem Cluster",
   "item.foodfarmingandfun.raw_gem": "Raw Gem",
   "item.foodfarmingandfun.end_game_food_item": "End Game Food Item",
+  "item.foodfarmingandfun.cabbage": "Cabbage",
+  "item.foodfarmingandfun.cabbage_seeds": "Cabbage Seeds?",
 
   "block.foodfarmingandfun.raw_gem_block": "Block of Raw Gems",
   "block.foodfarmingandfun.raw_gem_ore": "Raw Gem Ore",
@@ -11,19 +13,21 @@
 
 
   "block.foodfarmingandfun.glass_lamp": "Glass Lamp",
-  "block.foodfarmingandfun.black_glass_lamp": "Black Glass Lamp",
-  "block.foodfarmingandfun.blue_glass_lamp": "Blue Glass Lamp",
-  "block.foodfarmingandfun.cyan_glass_lamp": "Cyan Glass Lamp",
-  "block.foodfarmingandfun.gray_glass_lamp": "Gray Glass Lamp",
-  "block.foodfarmingandfun.green_glass_lamp": "Green Glass Lamp",
-  "block.foodfarmingandfun.light_blue_glass_lamp": "Light Blue Glass Lamp",
-  "block.foodfarmingandfun.light_gray_glass_lamp": "Light Gray Glass Lamp",
-  "block.foodfarmingandfun.lime_glass_lamp": "Lime Glass Lamp",
-  "block.foodfarmingandfun.magenta_glass_lamp": "Magenta Glass Lamp",
-  "block.foodfarmingandfun.orange_glass_lamp": "Orange Glass Lamp",
-  "block.foodfarmingandfun.pink_glass_lamp": "Pink Glass Lamp",
-  "block.foodfarmingandfun.purple_glass_lamp": "Purple Glass Lamp",
-  "block.foodfarmingandfun.red_glass_lamp": "Red Glass Lamp",
-  "block.foodfarmingandfun.white_glass_lamp": "White Glass Lamp",
-  "block.foodfarmingandfun.yellow_glass_lamp": "Yellow Glass Lamp"
+  "block.foodfarmingandfun.black_stained_glass_lamp": "Black Glass Lamp",
+  "block.foodfarmingandfun.blue_stained_glass_lamp": "Blue Glass Lamp",
+  "block.foodfarmingandfun.cyan_stained_glass_lamp": "Cyan Glass Lamp",
+  "block.foodfarmingandfun.gray_stained_glass_lamp": "Gray Glass Lamp",
+  "block.foodfarmingandfun.green_stained_glass_lamp": "Green Glass Lamp",
+  "block.foodfarmingandfun.light_blue_stained_glass_lamp": "Light Blue Glass Lamp",
+  "block.foodfarmingandfun.light_gray_stained_glass_lamp": "Light Gray Glass Lamp",
+  "block.foodfarmingandfun.lime_stained_glass_lamp": "Lime Glass Lamp",
+  "block.foodfarmingandfun.magenta_stained_glass_lamp": "Magenta Glass Lamp",
+  "block.foodfarmingandfun.orange_stained_glass_lamp": "Orange Glass Lamp",
+  "block.foodfarmingandfun.pink_stained_glass_lamp": "Pink Glass Lamp",
+  "block.foodfarmingandfun.purple_stained_glass_lamp": "Purple Glass Lamp",
+  "block.foodfarmingandfun.red_stained_glass_lamp": "Red Glass Lamp",
+  "block.foodfarmingandfun.white_stained_glass_lamp": "White Glass Lamp",
+  "block.foodfarmingandfun.yellow_stained_glass_lamp": "Yellow Glass Lamp"
+
+  "entity.minecraft.villager.healer_villager": "Healer"
 }

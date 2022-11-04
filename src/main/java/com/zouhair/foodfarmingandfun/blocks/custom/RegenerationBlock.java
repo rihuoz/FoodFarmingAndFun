@@ -26,7 +26,6 @@ public class RegenerationBlock extends Block {
         if(level.isClientSide() && hand == InteractionHand.MAIN_HAND){
             player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60 * 20));
             player.addEffect(new MobEffectInstance(randomMobEffects(), 20 * 20));
-            player.sendSystemMessage(Component.literal("this block is supposed to be destroyed"));
         }
 
         return super.use(state, level, pos, player, hand, result);
@@ -34,10 +33,9 @@ public class RegenerationBlock extends Block {
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        if(entity instanceof LivingEntity livingEntity && isPlayerOnTopOfBlock(entity, pos)){
+        if(entity instanceof LivingEntity livingEntity ){
             livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 2 * 20));
         }
-
         super.stepOn(level, pos, state, entity);
     }
 
@@ -51,19 +49,4 @@ public class RegenerationBlock extends Block {
         }
         return toReturn;
     }
-
-    private boolean isPlayerOnTopOfBlock(Entity entity, BlockPos pos){
-        boolean toReturn;
-
-        if(pos.getY() == entity.getBlockX() && pos.getX() == entity.getBlockX()
-                && pos.getZ() == entity.getBlockX()){
-            toReturn = true;
-        }else {
-            toReturn = false;
-        }
-
-        return toReturn;
-    }
-    // to work it out
-    
 }

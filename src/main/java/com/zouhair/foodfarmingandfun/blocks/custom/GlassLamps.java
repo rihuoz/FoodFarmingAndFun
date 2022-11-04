@@ -6,12 +6,16 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class GlassLamps extends Block {
+import java.util.ArrayList;
+import java.util.List;
+
+public class GlassLamps extends GlassBlock {
     public static final BooleanProperty LIT = BooleanProperty.create("lit");
 
     public GlassLamps(Properties properties) {

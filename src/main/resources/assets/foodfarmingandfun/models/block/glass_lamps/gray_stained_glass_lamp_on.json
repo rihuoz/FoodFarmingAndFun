@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "foodfarmingandfun:block/glass_lamps/gray_stained_glass_lamp_on"
+  }
+}
