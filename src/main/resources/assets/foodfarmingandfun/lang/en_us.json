@@ -27,7 +27,7 @@
   "block.foodfarmingandfun.purple_stained_glass_lamp": "Purple Glass Lamp",
   "block.foodfarmingandfun.red_stained_glass_lamp": "Red Glass Lamp",
   "block.foodfarmingandfun.white_stained_glass_lamp": "White Glass Lamp",
-  "block.foodfarmingandfun.yellow_stained_glass_lamp": "Yellow Glass Lamp"
+  "block.foodfarmingandfun.yellow_stained_glass_lamp": "Yellow Glass Lamp",
 
-  "entity.minecraft.villager.healer_villager": "Healer"
+  "entity.minecraft.villager.foodfarmingandfun.healer_villager": "Healer"
 }

@@ -4,6 +4,7 @@ package com.zouhair.foodfarmingandfun;
 import com.mojang.logging.LogUtils;
 import com.zouhair.foodfarmingandfun.blocks.FFAFBlocks;
 import com.zouhair.foodfarmingandfun.items.FFAFItems;
+import com.zouhair.foodfarmingandfun.painting.FAFFPaintings;
 import com.zouhair.foodfarmingandfun.villagers.FFAFVillagers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,21 +27,21 @@ public class FoodFarmingAndFun
 
     public FoodFarmingAndFun()
     {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus FFAFEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        FFAFItems.register(modEventBus);
-        FFAFBlocks.register(modEventBus);
+        FFAFItems.register(FFAFEventBus);
+        FFAFBlocks.register(FFAFEventBus);
+        FFAFVillagers.register(FFAFEventBus);
+        FAFFPaintings.register(FFAFEventBus);
 
-        modEventBus.addListener(this::commonSetup);
+        FFAFEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() -> {
-            FFAFVillagers.registerPOIs();
-        });
+        event.enqueueWork(FFAFVillagers::registerPOIs);
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)

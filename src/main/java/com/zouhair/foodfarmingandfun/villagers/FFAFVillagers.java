@@ -1,3 +1,4 @@
+
 package com.zouhair.foodfarmingandfun.villagers;
 
 import com.google.common.collect.ImmutableSet;
@@ -39,7 +40,7 @@ public class FFAFVillagers {
     public static void registerPOIs(){
         try {
             ObfuscationReflectionHelper.findMethod(PoiType.class,
-                    "registerBlockStates", PoiType.class)
+                            "registerBlockStates", PoiType.class)
                     .invoke(null, REGENERATION_BLOCK_POI.get());
         }catch (InvocationTargetException | IllegalAccessException exception){
             exception.printStackTrace();
